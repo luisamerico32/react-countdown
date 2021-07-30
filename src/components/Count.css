@@ -1,0 +1,21 @@
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+span p {
+    background-color: orange;
+    color: black;
+
+    font-weight: bold;
+    
+    margin: 5px;
+    margin-top: 15px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+span h4 {
+    font-size: large;
+    margin: 15px;
+}

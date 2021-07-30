@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import clock from './assets/animatedClock.svg';
 import './App.css';
+import Countdown from 'react-countdown';
+import renderer from './components/Count'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={clock} className="App-logo" alt="logo" />
+        <Countdown
+          date={Date.now() + 5000}
+          renderer={renderer}
+        />
       </header>
     </div>
   );
